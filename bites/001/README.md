@@ -1,2 +1,5 @@
-*Pittsburgh Plow Data*
-Testing Leaflet with 10000+ data points
+***Pittsburgh Plow Data***
+
+Testing a vanilla Leaflet.js map setup with *a lot* of data points.
+
+*Load at your own risk*
