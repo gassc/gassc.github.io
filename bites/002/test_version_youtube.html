@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>SAVID</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	
+	<!--Mapbox-->
+	<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.css' rel='stylesheet'/>
+	
+	<style>
+		body {
+			margin:10px;
+			padding:10px;
+			}
+		div#map {
+			width:640px;
+			height:390px;
+
+			}
+		div#player{
+			width:640px;
+			background:#000;
+			margin:0px auto;
+			}
+	</style>
+	
+	<script src='GOPR5268.mp4.js'></script>
+	
+</head>
+
+
+<body>
+
+	<div id='map' class="dark"></div>
+	<div>
+		<p>
+			x: <span id="curcoordx">000.000000</span><br>
+			y: <span id="curcoordy">000.000000</span><br>
+			z: <span id="curcoordz">00000.000000</span><br>
+		</p>
+	</div>
+	<!--<div id="player">Player Here.</div>-->
+	<!--
+	<div><iframe id="ytplayer" type="text/html" width="640" height="360"	src="https://www.youtube.com/embed/sqJDypl-2os?autoplay=1&disablekb=1&enablejsapi=1&fs=0&rel=0&showinfo=0&start=10&color=white"frameborder="0"	allowfullscreen></div>
+	-->
+
+	<script src='geovideo.js'></script>
+	
+</body>
+</html>
