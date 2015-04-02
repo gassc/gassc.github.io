@@ -17,9 +17,9 @@
 			videoId: 'sqJDypl-2os',
 			playerVars: {'autoplay': 1,},
 			events: {
-				'onReady': onPlayerReady,
-				'onStateChange': onPlayerStateChange
-				}
+        'onReady': onPlayerReady
+        //'onStateChange': onPlayerStateChange
+        }
 			});
 		}
 	
@@ -42,17 +42,15 @@
 			color: 'red'
 			};
 		}
-	
+		
 	// add 'fly' data as geojson
 	var line = L.geoJson(fly, {
 		style: style
 		}).addTo(map);
-	
+		
 	// access the line's coordinate list
-	//var coords = fly.features[0].geometry.coordinates
 	var coords = JSON.parse(JSON.stringify(fly)).features[0].geometry.coordinates
-	//var gj = JSON.parse(JSON.stringify(fly)).features[0].geometry.coordinates
-	//var gj = JSON.stringify(fly);
+	
 	// coordinate counter
 	var i = 0
 
@@ -62,7 +60,8 @@
 			type: 'Feature',
 			geometry: {
 				type: 'Point',
-				coordinates: [-79.278184,40.144725]
+				//coordinates: [-79.278184,40.144725]
+				coordinates: [coords[0][1], coords[0][0]]
 				},
 			properties: {
 					'marker-color': 'gray',
@@ -72,30 +71,43 @@
 	
 	////////////////////////////
 	// Video and Map control from Youtube
-	
-	
-	
-	// move the marker by setting its placement on each point
-	// in the list of coordinates
-	var tick_state = true;
-	function tick() {
-		marker.setLatLng([coords[i][1], coords[i][0]]);
-		if (tick_state) {
-			//code
-			if (++i < coords.length) setTimeout(tick, 1000);
-			}
-		
-		curcoordx.innerHTML = coords[i][1]
-		curcoordy.innerHTML = coords[i][0]
-		curcoordz.innerHTML = coords[i][2]
-		}
-		
-	
-	// Start the video and the map marker
+
+	// Start the video and the map marker when the video player is loaded
 	function onPlayerReady(event) {
 		event.target.playVideo();
+		
+		//Get video duration
+		var durtime = player.getDuration()
+		
+		player_dur_time.innerHTML = durtime
+		// get video current time
+		var getTime = function() {
+			player_cur_time.innerHTML = Math.floor(player.getCurrentTime());
+			return 
 		}
-	tick();
+		intervalID = setInterval(function(){
+			getTime();
+			},1000);
+		
+		setInterval(function(){getTime();},1000);
+		
+		// move the marker by setting its placement on each point
+		// in the list of coordinates
+		function tick() {
+			marker.setLatLng([coords[i][1], coords[i][0]]);
+			
+			if (++i < coords.length) setTimeout(tick, 1000);
+			
+			curcoorda.innerHTML = i
+			curcoordx.innerHTML = coords[i][1]
+			curcoordy.innerHTML = coords[i][0]
+			curcoordz.innerHTML = coords[i][2]
+			}
+			
+		tick();
+		}
+
+	
 	
 	/*
 	// The Youtube API calls this function when the player's state changes.
