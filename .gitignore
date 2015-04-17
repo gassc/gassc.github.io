@@ -221,9 +221,10 @@ pip-log.txt
 #############
 
 # Komodo Edit project files
-.komodoproject
-.kpf
+*.komodoproject
+*.kpf
 
 # project working folders
 _src/
 _old/
+_*/
