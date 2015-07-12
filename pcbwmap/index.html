@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  
+
 <meta charset="utf-8"/>
 
 <title>Unoffical 2015 Pittsburgh Craft Beer Week Map</title>
@@ -34,7 +34,7 @@
 
 <body>
 <style>
-  
+
   /*font styles*/
   body {
     background: #fff;
@@ -47,7 +47,7 @@
     line-height: 1.5;
     position: relative;
     cursor: auto; }
-    
+
   p, pa, hr {
     font-family: 'Oswald', sans-serif;
     font-weight: lighter;
@@ -56,23 +56,23 @@
     margin-bottom: 1.25rem;
     text-align: left;
     text-rendering: optimizeLegibility; }
-  
+
   a {
     font-family: 'Oswald', sans-serif;
     color: #8ad3f4;
     }
-  
+
   strong {
     font-style: normal;
     font-family: 'Oswald', sans-serif;
     color: #fdb930;
   }
-  
+
   li, ul {
     font-family: 'Oswald', sans-serif;
     text-align: left;
   }
-  
+
   h1, h2, h3 {
     font-family: 'Oswald', sans-serif;
     font-weight: normal;
@@ -83,23 +83,23 @@
     margin-bottom: 0.5rem;
     line-height: 1.4;
     text-shadow: 4px 4px 4px #000;}
-  
+
   h1 {
     font-size: 2.125rem;}
-  
+
   h2 {
     font-size: 1.6875rem;}
-  
+
   h3 {
     font-size: 1.375rem;}
 
   table, tr, th  {
     vertical-align: top;
-    break-word: word-wrap; 
+    break-word: word-wrap;
     }
-   
+
   /*leaflet sidebar styles*/
-  
+
   .leaflet-sidebar > .leaflet-control h1, h2, h3 {
     color: #fdb930;
     }
@@ -120,7 +120,7 @@
     margin: 1em 0;
     padding: 0;
     }
-  
+
   .custom-popup .leaflet-popup-content-wrapper {
     background: rgba(35,31,32,0.9);
     color: white;
@@ -131,7 +131,7 @@
   .leaflet-container a {
     color: #8ad3f4;
     }
-  
+
   .custom-popup .leaflet-popup-tip-container {
     margin: 0 auto;
     width: 40px;
@@ -151,7 +151,7 @@
     transform: rotate(45deg);
     background: rgba(35,31,32, 0.7);
     }
-  
+
   /*menu styles*/
   .menu-ui {
     width:100%;
@@ -203,7 +203,7 @@
       }
     #marker-list li:hover {
       background:#ffd580;
-      } 
+      }
 
 </style>
 
@@ -239,7 +239,7 @@
   <div>
 
     <hr>
-    
+
     <h3 style="text-align:left">This map is not affiliated with <a href="http://pittsburghcraftbeerweek.com/">pittsburghcraftbeerweek.com</a>.</h3>
     <p style="font-size:small">It is merely an example project for <a href="http://maptime.io/pittsburgh" target="_blank">Maptime PGH</a> created by <a href="https://twitter.com/GassChristianB" target="_blank">@GassChristianB</a>.</p>
     <p style="font-size:small">If you choose to rely on this map to select a PCBW event, please verify event information at <a href="http://pittsburghcraftbeerweek.com/">pittsburghcraftbeerweek.com</a> before heading out.</strong></p>
@@ -262,12 +262,12 @@ LEAFLET SCRIPT -------------
 <script>
   L.mapbox.accessToken = 'pk.eyJ1IjoiY2JndGhvcjYyNCIsImEiOiJzZ2NaNmo4In0.hbXzZPAvaCO5GLu45bptTw';
   // drawn from https://www.mapbox.com/mapbox.js/example/v1.0.0/markers-with-multiple-filters/
-  
+
   // initialize the map
   var map = L.map('map').setView([40.4452, -79.9866], 10);
   var markerList = document.getElementById('marker-list');
-	
-	// create mapstack tile layer and add to map
+
+  // create mapstack tile layer and add to map
   L.tileLayer(
   //'http://{s}.sm.mapstack.stamen.com/((watercolor,$fff%5Bdifference%5D,$fdb930%5Bhsl-color%5D)%5B@80%5D,(terrain-background,$231f20%5Bhsl-color%5D,mapbox-water%5Bdestination-out%5D)%5Bmultiply%5D,(watercolor,$8ad3f4%5Bhsl-color%5D,mapbox-water%5Bdestination-in%5D),(toner-hybrid,$fff%5Bdifference%5D,$fdb930%5Bhsl-color%5D)%5Bscreen%5D)/{z}/{x}/{y}.png',
   //'http://{s}.sm.mapstack.stamen.com/($000000%5B@p%5D,(terrain-background,$ffffff%5Bhsl-color%5D,mapbox-water%5Bdestination-out%5D)%5B@25%5D,(toner-lite,$8ad3f4%5Bhsl-color@50%5D,mapbox-water%5Bdestination-in%5D),(toner-hybrid,$fff%5Bdifference%5D,$fff%5B@10%5D,$fdb930%5Bhsl-color@75%5D))/{z}/{x}/{y}.png',
@@ -278,17 +278,17 @@ LEAFLET SCRIPT -------------
       minZoom: 8,
     }
 	).addTo(map);
-	
+
   var pierogie_icon = L.icon({
     iconUrl: 'pierogie-01.png',
     iconSize: [60, 60],
     popupAnchor: [0,-18]
     });
-  
+
   //
   var markers = L.mapbox.featureLayer(pcbw_geojson, {
     pointToLayer: function(feature, latlng) {
-      var marker = L.marker(latlng, {icon: 
+      var marker = L.marker(latlng, {icon:
         L.mapbox.marker.icon({
           'marker-size': 'large',
           'marker-symbol': 'beer',
@@ -297,7 +297,7 @@ LEAFLET SCRIPT -------------
       return marker;
       }
     })
-  
+
     // Filter markers that have 'day1' set to "true", and return true
     .setFilter(function(f) {
       return (f.properties.day1 == "TRUE") ? true : false;
@@ -321,7 +321,7 @@ LEAFLET SCRIPT -------------
     .addTo(map);
 
   //console.log(markers._geojson.features[0].properties.name);
-  
+
 
   $('.menu-ui a').on('click', function() {
     // For each filter link, get the 'data-filter' attribute value.
@@ -331,7 +331,7 @@ LEAFLET SCRIPT -------------
     markers.setFilter(function(f) {
       return (f.properties[filter] == "TRUE") ? true : false;
       });
-    
+
     //Clear existing list of venues
     while (markerList.hasChildNodes()) {
       markerList.removeChild(markerList.firstChild);
@@ -352,7 +352,7 @@ LEAFLET SCRIPT -------------
         };
       });
     return false;
-    
+
     });
   /*
   map.on('ready', function(e) {
@@ -360,7 +360,7 @@ LEAFLET SCRIPT -------------
       var item = markerList.appendChild(document.createElement('li'));
       //item.innerHTML = markers.getGeoJSON().properties.name;
       item.innerHTML = layer.toGeoJSON().properties.name;
-      
+
       item.onclick = function() {
         map.setView(layer.getLatLng(), 14);
         layer.openPopup();
@@ -368,7 +368,7 @@ LEAFLET SCRIPT -------------
       });
     });
   */
-  
+
   /*
   //define the icon for the data points. This will be referenced later.
   var pierogie_icon = L.icon({
@@ -384,7 +384,7 @@ LEAFLET SCRIPT -------------
       }
     }).addTo(map);
   */
-  
+
 	// create sidebar and add to map (not required for maptime demonstration)
   var sidebar = L.control.sidebar('sidebar', {
     closeButton: false,
@@ -396,8 +396,8 @@ LEAFLET SCRIPT -------------
   setTimeout(function() {
     sidebar.show();
   }, 500);
-  
-	
+
+
 </script>
 
 </body>
