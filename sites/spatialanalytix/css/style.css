@@ -5,7 +5,7 @@ body,html{
 }
 body{
     font-family: 'Lato', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
 
@@ -177,7 +177,7 @@ em{
     float: left;
     height: 50px;
     padding: 15px 15px;
-    font-size: 35px;
+    font-size: 20px;
     line-height: 20px;
     font-family: 'Lato', sans-serif;*/
     font-weight: 900;
@@ -322,11 +322,16 @@ padding-left: 60px !important;
 /*banner*/
 #banner{
     background-color: #444;
-    background-position: center 0%;
-    background-size: auto;
-    background-repeat: repeat;
+    background-position: center 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    /*background-image: url(../img/banner.jpg);*/
+    background-image:
+        linear-gradient(
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
+        ),
+        url(../img/banner.jpg);
     display: table;
     width: 100%;
     height: 100%;
@@ -425,21 +430,27 @@ padding-left: 60px !important;
 
 @media(max-width:433px){
     .main-heading span{
-        font-size: 14px;
+        font-size: 1em;
     }
+
+    .sub-title{
+        font-size: 2em;
+        line-height: 1.25em;
+    }
+
 }
 /******************services****************/
 .service-box{
     text-align: center;
-    margin-bottom: 25px;
+    margin-top: 2em;
 }
 .service-box i{
-    width:95px;
-    height: 95px;
-    line-height: 95px;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
     text-align: center;
     color:#d95b44;
-    font-size: 36px;
+    font-size: 3em;
     background-color: #eee;
     margin-bottom: 25px;
     border-radius: 50%;
@@ -452,10 +463,16 @@ padding-left: 60px !important;
 }
 .service-box:hover i{
     opacity: 1;
-    transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1.2);
     color:#fff;
     background-color: #d95b44;
+}
 
+.service-box:hover thumb1{
+    opacity: 1;
+    transform: rotate(360deg) scale(1.2);
+    color:#fff;
+    background-image: url(img/thumb1.jpg);
 }
 
 .service-box h4{
@@ -484,6 +501,46 @@ h3{
     font-size: 23px;
     vertical-align: middle;
 }
+
+
+.service-callout {
+    background-color: #444;
+    background-repeat: no-repeat;
+    background-position: center 75%;
+    background-attachment: fixed;
+    background-image:
+        linear-gradient(
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ),
+        url('../img/banner-2.jpg');
+    color: #fff;
+    width: 100%;
+    padding: 5em 0em;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+@media(max-width:320px){
+    .service-callout h1 {
+        font-size: 1.5em;
+    }
+}
+
+.service-callout h1 {
+    margin-bottom: 20px;
+    color:#fff;
+    text-transform: uppercase;
+}
+.service-callout p {
+    color:#fff;
+}
+
+
+
 /*****************video player***********/
 #ytp{
     width:100%;
@@ -833,7 +890,16 @@ h3{
 /**contact**/
 
 .contct-info{
-    background: url('../img/banner-3.jpg') no-repeat center center fixed;
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ),
+        url('../img/banner-3.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #fff;
     width: 100%;
     padding: 80px 0;
     -webkit-background-size: cover;
