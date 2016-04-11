@@ -1,6 +1,6 @@
 /*Priject    : Piple
  * Author  : Piple
- * 
+ *
  */
 //transperent nav
 // Sticky header style change on sroll
@@ -31,7 +31,7 @@ $(document).ready(function() {
  =============================================== */
 $(window).load(function() {
     $('.main-flex-slider').flexslider({
-        slideshowSpeed: 5000,
+        slideshowSpeed: 2000,
         directionNav: false,
         animation: "slide",
         controlNav: false,
@@ -146,20 +146,16 @@ jQuery(document).ready(function($) {
         time: 800
     });
 });
-  
+/*
   //video background
   jQuery(function() {
     jQuery(".player").mb_YTPlayer();
 });
-                
+*/
+
                 /*=========================*/
 /*========tooltip and popovers====*/
 /*==========================*/
 //$("[data-toggle=popover]").popover();
 
 $("[data-toggle=tooltip]").tooltip();
-
-
-
-
-
