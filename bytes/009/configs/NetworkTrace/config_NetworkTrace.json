@@ -1,0 +1,245 @@
+{
+  "highlighterDetails": {
+    "imageData": "/webappbuilder/apps/2/widgets/NetworkTrace//images/ani/default.gif",
+    "height": 100,
+    "width": 100,
+    "timeout": 1000
+  },
+  "geoprocessing": {
+    "url": "https://arcgis4.roktech.net/arcgis/rest/services/rsi/NetworkTrace/GPServer/NetworkTrace",
+    "inputs": [
+      {
+        "paramName": "Flags",
+        "displayName": "Flags",
+        "toolTip": "Input location(s) from which to start the trace",
+        "type": "Flag",
+        "symbol": {
+          "angle": 0,
+          "xoffset": 0,
+          "yoffset": 0,
+          "type": "esriPMS",
+          "url": "http://static.arcgis.com/images/Symbols/Basic/esriCrimeMarker_86_White.png",
+          "imageData": "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",
+          "contentType": "image/png",
+          "width": 27,
+          "height": 27
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "paramName": "Upstream_Pipes",
+        "type": "Result",
+        "panelText": "Upstream Pipes",
+        "toolTip": "Wastewater pipes upstream from the flag(s).",
+        "displayText": "{PIPE_DIAM} inch {SEWERTYPE} {PIPETYPE} sewer ({OWNER_NAME})",
+        "MinScale": 0,
+        "MaxScale": 0,
+        "exportToCSV": true,
+        "saveToLayer": "",
+        "symbol": {
+          "color": [
+            216,
+            106,
+            39,
+            191
+          ],
+          "width": 9,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        },
+        "bypassDetails": {
+          "skipable": false,
+          "IDField": ""
+        }
+      },
+      {
+        "paramName": "Downstream_Pipes",
+        "type": "Result",
+        "panelText": "Downstream Pipes",
+        "toolTip": "Wastewater pipes downstream from the flag(s).",
+        "displayText": "{PIPE_DIAM} inch {SEWERTYPE} {PIPETYPE} sewer ({OWNER_NAME})",
+        "MinScale": 0,
+        "MaxScale": 0,
+        "exportToCSV": true,
+        "saveToLayer": "",
+        "symbol": {
+          "color": [
+            175,
+            186,
+            1,
+            186
+          ],
+          "width": 9,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        },
+        "bypassDetails": {
+          "skipable": false,
+          "IDField": ""
+        }
+      },
+      {
+        "paramName": "Upstream_Structures",
+        "type": "Result",
+        "panelText": "Upstream Structures",
+        "toolTip": "Upstream wastewater structures",
+        "displayText": "{GEO_TYP_PT} {STRUCT_ID} {{OWNER_NAME})",
+        "MinScale": 0,
+        "MaxScale": 0,
+        "exportToCSV": true,
+        "saveToLayer": "",
+        "symbol": {
+          "color": [
+            216,
+            106,
+            39,
+            189
+          ],
+          "size": 12,
+          "angle": 0,
+          "xoffset": 0,
+          "yoffset": 0,
+          "type": "esriSMS",
+          "style": "esriSMSCircle",
+          "outline": {
+            "color": [
+              216,
+              106,
+              39,
+              255
+            ],
+            "width": 2.25,
+            "type": "esriSLS",
+            "style": "esriSLSSolid"
+          }
+        },
+        "bypassDetails": {
+          "skipable": false,
+          "IDField": ""
+        }
+      },
+      {
+        "paramName": "Downstream_Structures",
+        "type": "Result",
+        "panelText": "Downstream Structures",
+        "toolTip": "Downstream wastewater structures",
+        "displayText": "{GEO_TYP_PT} {STRUCT_ID} {{OWNER_NAME})",
+        "MinScale": 0,
+        "MaxScale": 0,
+        "exportToCSV": true,
+        "saveToLayer": "",
+        "symbol": {
+          "color": [
+            175,
+            186,
+            1,
+            191
+          ],
+          "size": 10.5,
+          "angle": 0,
+          "xoffset": 0,
+          "yoffset": 0,
+          "type": "esriSMS",
+          "style": "esriSMSCircle",
+          "outline": {
+            "color": [
+              175,
+              186,
+              1,
+              255
+            ],
+            "width": 2.25,
+            "type": "esriSLS",
+            "style": "esriSLSSolid"
+          }
+        },
+        "bypassDetails": {
+          "skipable": false,
+          "IDField": ""
+        }
+      }
+    ]
+  },
+  "displayTextForRunButton": "Run Trace",
+  "autoZoomAfterTrace": false,
+  "overview": {
+    "visibility": false,
+    "type": "Overview",
+    "BufferDistance": 10,
+    "BufferType": "Convex",
+    "Unit": 9002,
+    "MinScale": 0,
+    "MaxScale": 0,
+    "saveToLayer": "",
+    "symbol": {
+      "color": [
+        155,
+        187,
+        89,
+        130
+      ],
+      "outline": {
+        "color": [
+          115,
+          140,
+          61,
+          255
+        ],
+        "width": 1.5,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    },
+    "fieldMap": []
+  },
+  "summaryExpression": {
+    "summaryExpressionValueArr": [
+      {
+        "value": "Upstream_Pipes:PIPE_LGTH:Sum",
+        "trimmedValue": "Upstream_Pipes:PIPE_LGTH:Sum"
+      },
+      {
+        "value": "Upstream_Pipes:Count",
+        "trimmedValue": "Upstream_Pipes:Count"
+      },
+      {
+        "value": "Upstream_Structures:Count",
+        "trimmedValue": "Upstream_Structures:Count"
+      },
+      {
+        "value": "Downstream_Pipes:PIPE_LGTH:Sum",
+        "trimmedValue": "Downstream_Pipes:PIPE_LGTH:Sum"
+      },
+      {
+        "value": "Downstream_Pipes:Count",
+        "trimmedValue": "Downstream_Pipes:Count"
+      },
+      {
+        "value": "Downstream_Structures:Count",
+        "trimmedValue": "Downstream_Structures:Count"
+      }
+    ],
+    "summaryExpressionValue": "<b>Upstream:</b><br />{Upstream_Pipes:PIPE_LGTH:Sum} feet of pipe<br />{Upstream_Pipes:Count} pipe segments<br />{Upstream_Structures:Count} structures<b><br /><br /></b><br /><b>Downstream:</b><br />{Downstream_Pipes:PIPE_LGTH:Sum} feet of pipe<br />{Downstream_Pipes:Count} pipe segments<br />{Downstream_Structures:Count} structures",
+    "summaryExpressionTrimmedValue": "<b>Upstream:</b><br />{Upstream_Pipes:PIPE_LGTH:Sum} feet of pipe<br />{Upstream_Pipes:Count} pipe segments<br />{Upstream_Structures:Count} structures<b><br /><br /></b><br /><b>Downstream:</b><br />{Downstream_Pipes:PIPE_LGTH:Sum} feet of pipe<br />{Downstream_Pipes:Count} pipe segments<br />{Downstream_Structures:Count} structures",
+    "summaryExpressionNLS": {
+      "summaryTabText": "Summary",
+      "summaryFieldsetText": "Summary settings",
+      "inputOutput": "Inputs/Outputs",
+      "field": "Fields",
+      "operator": "Operators",
+      "inputOperatorCountOption": "Count",
+      "outputOperatorCountOption": "Count",
+      "outputOperatorSkipCountOption": "SkipCount",
+      "fieldOperatorSumOption": "Sum",
+      "fieldOperatorMinOption": "Min",
+      "fieldOperatorMaxOption": "Max",
+      "fieldOperatorMeanOption": "Mean",
+      "expressionAddButtonText": "Add",
+      "expressionVerifyButtonText": "Verify",
+      "summaryEditorText": "Summary text"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "showLegend": true,
+  "contextMenu": {
+    "ZoomTo": true,
+    "Transparency": true,
+    "EnableOrDisablePopup": false,
+    "MoveupOrMovedown": false,
+    "OpenAttributeTable": true,
+    "DescriptionOrShowItemDetailsOrDownload": true
+  },
+  "layerOptions": {
+    "Hydrology_Lines_4502": {
+      "display": true
+    },
+    "Hydrology_Areas_1817": {
+      "display": true
+    },
+    "Watersheds_9535": {
+      "display": true
+    },
+    "3RWW_Atlas_Green_Infrastructure_Inventory_6488": {
+      "display": true
+    },
+    "rsi_featurelayer_5693": {
+      "display": true
+    },
+    "rsi_flowmonitors_5202": {
+      "display": true
+    },
+    "rsi_flowmonitors_5202_0": {
+      "display": true
+    },
+    "rsi_flowmonitors_5202_1": {
+      "display": true
+    },
+    "rsi_flowmonitors_5202_2": {
+      "display": true
+    },
+    "rsi_tilelayer_poc_6159": {
+      "display": true
+    },
+    "rsi_tilelayer_poc_6159_0": {
+      "display": false
+    },
+    "rsi_tilelayer_2418": {
+      "display": true
+    },
+    "rsi_tilelayer_2418_0": {
+      "display": true
+    },
+    "rsi_tilelayer_2418_1": {
+      "display": true
+    },
+    "rsi_tilelayer_2418_2": {
+      "display": true
+    },
+    "rsi_tilelayer_2418_3": {
+      "display": true
+    },
+    "rsi_tilelayer_2418_4": {
+      "display": true
+    },
+    "rsi_tilelayer_2418_5": {
+      "display": true
+    },
+    "rsi_tilelayer_2418_6": {
+      "display": true
+    },
+    "rsi_tilelayer_2418_7": {
+      "display": true
+    },
+    "rsi_tilelayer_2418_8": {
+      "display": true
+    },
+    "rsi_tilelayer_2418_9": {
+      "display": true
+    },
+    "Pict_2015Spring_6416": {
+      "display": true
+    },
+    "Pict_2015Spring_6416_0": {
+      "display": false
+    }
+  }
+}

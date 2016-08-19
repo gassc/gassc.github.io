@@ -1,0 +1,10 @@
+{
+  "splash": {
+    "splashContent": "<span style=\"font-family: Arial;\"><font size=\"5\"><span style=\"font-weight: bold;\"><span style=\"color: rgb(105, 105, 105);\">3RWW Sewer Atlas</span> <span style=\"color: rgb(100, 149, 237);\">version 2.0.0-beta</span></span></font><br /><br /><span style=\"color: rgb(105, 105, 105);\">This web mapping application is currently under development and active testing.<br /><br />For the official Sewer Atlas, please visit <a href=\"http://mds.3riverswetweather.org/atlas/rsi\" target=\"_self\">mds.3riverswetweather.org/atlas/rsi</a><br /><br />Questions about the data on this map? Contact <a href=\"mailto:bdutton@3rww.org\" target=\"_self\">bdutton@3rww.org</a></span></span><span style=\"color: rgb(105, 105, 105);\"><span style=\"font-family: Arial;\"><br />Questions about this application? Contact the CivicMapper team at <a href=\"mailto:3rww@civicmapper.com\" target=\"_self\">3rww@civicmapper.com</a></span></span>",
+    "requireConfirm": false,
+    "confirmText": "",
+    "showOption": false,
+    "confirmEverytime": true,
+    "backgroundColor": "#ffffff"
+  }
+}

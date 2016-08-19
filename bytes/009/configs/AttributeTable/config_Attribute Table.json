@@ -1,0 +1,603 @@
+{
+  "layerInfos": [
+    {
+      "name": "Allegheny County Hydrology Lines",
+      "id": "Hydrology_Lines_4502",
+      "layer": {
+        "url": "https://services1.arcgis.com/vdNDkVykv9vEWFX4/arcgis/rest/services/Hydrology_Lines/FeatureServer/0"
+      },
+      "show": false
+    },
+    {
+      "name": "Allegheny County Hydrology Areas",
+      "id": "Hydrology_Areas_1817",
+      "layer": {
+        "url": "https://services1.arcgis.com/vdNDkVykv9vEWFX4/arcgis/rest/services/Hydrology_Areas/FeatureServer/0",
+        "fields": [
+          {
+            "name": "FID",
+            "alias": "FID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "FEATURECOD",
+            "alias": "FEATURECOD",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "UPDATE_YEA",
+            "alias": "UPDATE_YEA",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "SHAPE_area",
+            "alias": "SHAPE_area",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "SHAPE_len",
+            "alias": "SHAPE_len",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          }
+        ]
+      },
+      "show": false
+    },
+    {
+      "name": "Allegheny County Watershed Boundaries",
+      "id": "Watersheds_9535",
+      "layer": {
+        "url": "https://services1.arcgis.com/vdNDkVykv9vEWFX4/arcgis/rest/services/Watersheds/FeatureServer/0",
+        "fields": [
+          {
+            "name": "FID",
+            "alias": "FID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "AREA",
+            "alias": "AREA",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "PERIMETER",
+            "alias": "PERIMETER",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "RINGS_OK",
+            "alias": "RINGS_OK",
+            "show": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "DESCR",
+            "alias": "DESCR",
+            "show": false
+          },
+          {
+            "name": "COUNT_",
+            "alias": "COUNT",
+            "show": false,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          }
+        ]
+      },
+      "show": false
+    },
+    {
+      "name": "3RWW Green Infrastructure Atlas",
+      "id": "3RWW_Atlas_Green_Infrastructure_Inventory_6488",
+      "layer": {
+        "url": "https://services1.arcgis.com/vdNDkVykv9vEWFX4/arcgis/rest/services/3RWW_Atlas_Green_Infrastructure_Inventory/FeatureServer/0",
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "show": false
+          },
+          {
+            "name": "ProjectName",
+            "alias": "Project Name",
+            "show": true
+          },
+          {
+            "name": "ProjectDescription",
+            "alias": "Green Infrastructure Projec Type",
+            "show": true
+          },
+          {
+            "name": "ProjectSize",
+            "alias": "Project Size Notes",
+            "show": true
+          },
+          {
+            "name": "DateBuilt",
+            "alias": "Date Built",
+            "show": true
+          },
+          {
+            "name": "Sewershed",
+            "alias": "Sewershed",
+            "show": true
+          },
+          {
+            "name": "Municipality",
+            "alias": "Municipality",
+            "show": true
+          },
+          {
+            "name": "BMPStatus",
+            "alias": "BMP Status",
+            "show": true
+          },
+          {
+            "name": "ContactName",
+            "alias": "Contact Name",
+            "show": true
+          },
+          {
+            "name": "ContactNumber",
+            "alias": "Contact Number",
+            "show": true
+          },
+          {
+            "name": "OwnerName",
+            "alias": "Owner Name",
+            "show": true
+          },
+          {
+            "name": "OwnerNumber",
+            "alias": "Owner Number",
+            "show": true
+          },
+          {
+            "name": "Latitude",
+            "alias": "Latitude",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Longitude",
+            "alias": "Longitude",
+            "show": true
+          },
+          {
+            "name": "StreetAddress",
+            "alias": "Street Address",
+            "show": true
+          },
+          {
+            "name": "City",
+            "alias": "City",
+            "show": true
+          },
+          {
+            "name": "Zipcode",
+            "alias": "Zipcode",
+            "show": true
+          },
+          {
+            "name": "Comment",
+            "alias": "Comment",
+            "show": true
+          },
+          {
+            "name": "Source",
+            "alias": "Source",
+            "show": true
+          },
+          {
+            "name": "ReductionPercent",
+            "alias": "Reduction Percent",
+            "show": true
+          },
+          {
+            "name": "ReductionVolume",
+            "alias": "Reduction Volume",
+            "show": true
+          },
+          {
+            "name": "AcreageManaged",
+            "alias": "Acreage Managed",
+            "show": true
+          },
+          {
+            "name": "ImperviousAcresManaged",
+            "alias": "Impervious Acreage Managed",
+            "show": true
+          },
+          {
+            "name": "Cost",
+            "alias": "Cost",
+            "show": true
+          },
+          {
+            "name": "Photo",
+            "alias": "Photo",
+            "show": true
+          },
+          {
+            "name": "DesignDrawing",
+            "alias": "Design Drawing",
+            "show": true
+          },
+          {
+            "name": "Vendors",
+            "alias": "Vendors",
+            "show": true
+          },
+          {
+            "name": "Monitoring",
+            "alias": "Monitoring",
+            "show": true
+          },
+          {
+            "name": "Maintenance",
+            "alias": "Maintenance",
+            "show": true
+          },
+          {
+            "name": "InformationStatus",
+            "alias": "Information Status",
+            "show": true
+          },
+          {
+            "name": "UpdatedBy",
+            "alias": "UpdatedBy",
+            "show": true
+          },
+          {
+            "name": "FlickrPhotoLink",
+            "alias": "FlickrPhotoLink",
+            "show": true
+          },
+          {
+            "name": "Lat",
+            "alias": "Lat",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "Long",
+            "alias": "Long",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "GlobalID",
+            "alias": "",
+            "show": false
+          },
+          {
+            "name": "CreationDate",
+            "alias": "CreationDate",
+            "show": false,
+            "format": {
+              "dateFormat": "shortDateShortTime",
+              "timezone": "utc"
+            }
+          },
+          {
+            "name": "Creator",
+            "alias": "Creator",
+            "show": false
+          },
+          {
+            "name": "EditDate",
+            "alias": "EditDate",
+            "show": false,
+            "format": {
+              "dateFormat": "shortDateShortTime",
+              "timezone": "utc"
+            }
+          },
+          {
+            "name": "Editor",
+            "alias": "Editor",
+            "show": false
+          },
+          {
+            "name": "size_vol",
+            "alias": "Project Size (volume)",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "size_area",
+            "alias": "Project Size (area)",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "name": "cost_total",
+            "alias": "Project Cost (est. total)",
+            "show": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          }
+        ]
+      },
+      "show": false
+    },
+    {
+      "name": "Sewer Structures",
+      "id": "rsi_featurelayer_5693",
+      "layer": {
+        "url": "https://arcgis4.roktech.net/arcgis/rest/services/rsi/rsi_featurelayer/MapServer/0"
+      },
+      "show": true
+    },
+    {
+      "name": "Regional Flow Monitor Points",
+      "id": "rsi_flowmonitors_5202_0",
+      "layer": {
+        "url": "https://arcgis4.roktech.net/arcgis/rest/services/rsi/rsi_flowmonitors/MapServer/0",
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "show": false
+          },
+          {
+            "name": "MONITOR_NM",
+            "alias": "MONITOR_NM",
+            "show": false
+          },
+          {
+            "name": "MDS_MUNI",
+            "alias": "Muni/Owner",
+            "show": true
+          },
+          {
+            "name": "BASIN",
+            "alias": "Basin",
+            "show": true
+          },
+          {
+            "name": "FLD_CONSLT",
+            "alias": "Consultant",
+            "show": true
+          },
+          {
+            "name": "ORIG_NAME",
+            "alias": "ORIG_NAME",
+            "show": false
+          },
+          {
+            "name": "PT_STATUS",
+            "alias": "Status",
+            "show": true
+          },
+          {
+            "name": "LBS_FM_TAG",
+            "alias": "LBS Tag",
+            "show": true
+          },
+          {
+            "name": "LOCATION",
+            "alias": "LOCATION",
+            "show": false
+          },
+          {
+            "name": "PDF_SHT_NM",
+            "alias": "PDF_SHT_NM",
+            "show": false
+          },
+          {
+            "name": "PDF_LINK",
+            "alias": "PDF_LINK",
+            "show": false
+          },
+          {
+            "name": "Shape",
+            "alias": "Shape",
+            "show": false
+          },
+          {
+            "name": "created_user",
+            "alias": "created_user",
+            "show": false
+          },
+          {
+            "name": "created_date",
+            "alias": "created_date",
+            "show": false,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            }
+          },
+          {
+            "name": "last_edited_user",
+            "alias": "last_edited_user",
+            "show": false
+          },
+          {
+            "name": "last_edited_date",
+            "alias": "last_edited_date",
+            "show": false,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            }
+          },
+          {
+            "name": "GlobalID",
+            "alias": "GlobalID",
+            "show": false
+          }
+        ]
+      },
+      "show": true
+    },
+    {
+      "name": "Net Flow Monitoring Area",
+      "id": "rsi_flowmonitors_5202_1",
+      "layer": {
+        "url": "https://arcgis4.roktech.net/arcgis/rest/services/rsi/rsi_flowmonitors/MapServer/1"
+      },
+      "show": false
+    },
+    {
+      "name": "Gross Flow Monitoring Areas",
+      "id": "rsi_flowmonitors_5202_2",
+      "layer": {
+        "url": "https://arcgis4.roktech.net/arcgis/rest/services/rsi/rsi_flowmonitors/MapServer/2"
+      },
+      "show": false
+    },
+    {
+      "name": "Points_For_Extent",
+      "id": "rsi_tilelayer_poc_6159_0",
+      "layer": {
+        "url": "https://arcgis4.roktech.net/arcgis/rest/services/rsi/rsi_tilelayer_poc/MapServer/0"
+      },
+      "show": false
+    },
+    {
+      "name": "Arrows (10K)",
+      "id": "rsi_tilelayer_2418_0",
+      "layer": {
+        "url": "https://arcgis4.roktech.net/arcgis/rest/services/rsi/rsi_tilelayer/MapServer/0"
+      },
+      "show": false
+    },
+    {
+      "name": "Pipes - unknown width (20k)",
+      "id": "rsi_tilelayer_2418_1",
+      "layer": {
+        "url": "https://arcgis4.roktech.net/arcgis/rest/services/rsi/rsi_tilelayer/MapServer/1"
+      },
+      "show": true
+    },
+    {
+      "name": "Pipes (10k)",
+      "id": "rsi_tilelayer_2418_2",
+      "layer": {
+        "url": "https://arcgis4.roktech.net/arcgis/rest/services/rsi/rsi_tilelayer/MapServer/2"
+      },
+      "show": true
+    },
+    {
+      "name": "Arrows (20K)",
+      "id": "rsi_tilelayer_2418_3",
+      "layer": {
+        "url": "https://arcgis4.roktech.net/arcgis/rest/services/rsi/rsi_tilelayer/MapServer/3"
+      },
+      "show": false
+    },
+    {
+      "name": "Pipes (20k)",
+      "id": "rsi_tilelayer_2418_4",
+      "layer": {
+        "url": "https://arcgis4.roktech.net/arcgis/rest/services/rsi/rsi_tilelayer/MapServer/4"
+      },
+      "show": false
+    },
+    {
+      "name": "Arrows (80K)",
+      "id": "rsi_tilelayer_2418_5",
+      "layer": {
+        "url": "https://arcgis4.roktech.net/arcgis/rest/services/rsi/rsi_tilelayer/MapServer/5"
+      },
+      "show": false
+    },
+    {
+      "name": "Pipes - unknown width (80k)",
+      "id": "rsi_tilelayer_2418_6",
+      "layer": {
+        "url": "https://arcgis4.roktech.net/arcgis/rest/services/rsi/rsi_tilelayer/MapServer/6"
+      },
+      "show": false
+    },
+    {
+      "name": "Pipes ( 80k)",
+      "id": "rsi_tilelayer_2418_7",
+      "layer": {
+        "url": "https://arcgis4.roktech.net/arcgis/rest/services/rsi/rsi_tilelayer/MapServer/7"
+      },
+      "show": false
+    },
+    {
+      "name": "Pipes (200k)",
+      "id": "rsi_tilelayer_2418_8",
+      "layer": {
+        "url": "https://arcgis4.roktech.net/arcgis/rest/services/rsi/rsi_tilelayer/MapServer/8"
+      },
+      "show": false
+    },
+    {
+      "name": "Virtual Laterals (zoom <5k)",
+      "id": "rsi_tilelayer_2418_9",
+      "layer": {
+        "url": "https://arcgis4.roktech.net/arcgis/rest/services/rsi/rsi_tilelayer/MapServer/9"
+      },
+      "show": false
+    }
+  ],
+  "table": {
+    "pageSizeOptions": [
+      25,
+      50,
+      100,
+      1000
+    ]
+  },
+  "hideExportButton": false,
+  "initiallyExpand": false,
+  "filterByMapExtent": true
+}

@@ -1,0 +1,52 @@
+{
+  "allPlaceholder": "Search by Address or Sewer Structures",
+  "showInfoWindowOnSelect": true,
+  "sources": [
+    {
+      "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+      "name": "Esri Search",
+      "singleLineFieldName": "SingleLine",
+      "placeholder": "Address and Place Search",
+      "countryCode": "USA",
+      "zoomScale": 50000,
+      "maxSuggestions": 6,
+      "maxResults": 6,
+      "searchInCurrentMapExtent": false,
+      "type": "locator"
+    },
+    {
+      "layerId": "rsi_featurelayer_5693",
+      "url": "https://arcgis4.roktech.net/arcgis/rest/services/rsi/rsi_featurelayer/MapServer/0",
+      "name": "Structures",
+      "placeholder": "Search by Structure ID or Type",
+      "searchFields": [
+        "GEO_TYP_PT",
+        "STRUCT_ID"
+      ],
+      "displayField": "OWNER_NAME",
+      "exactMatch": false,
+      "searchInCurrentMapExtent": false,
+      "zoomScale": 50000,
+      "maxSuggestions": 5,
+      "maxResults": 10,
+      "type": "query"
+    },
+    {
+      "layerId": "rsi_flowmonitors_5202_0",
+      "url": "https://arcgis4.roktech.net/arcgis/rest/services/rsi/rsi_flowmonitors/MapServer/0",
+      "name": "Regional Flow Monitor Points",
+      "placeholder": "Search Flow Monitors",
+      "searchFields": [
+        "MONITOR_NM",
+        "ORIG_NAME"
+      ],
+      "displayField": "ORIG_NAME",
+      "exactMatch": false,
+      "searchInCurrentMapExtent": false,
+      "zoomScale": 50000,
+      "maxSuggestions": 5,
+      "maxResults": 10,
+      "type": "query"
+    }
+  ]
+}
